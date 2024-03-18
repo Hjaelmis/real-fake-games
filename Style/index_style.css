@@ -1,0 +1,155 @@
+/*GENERAL*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #717171;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #ffffff, #717171)
+}
+
+div.real_fake_text {
+    align-items: flex-start;
+}
+
+img.real_fake_text {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*LOGO*/
+.circle_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+#circle1 { 
+    width: 500px;
+    height: 500px;
+    background-color: #072D0D;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#circle2 {
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    background-color: #114D1B;
+}
+
+#circle3 { 
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    background-color: #1A7529;
+}
+
+#circle4 { 
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    background-color: #29993B
+}
+
+#circle5 { 
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #55CA67;
+}
+
+#circle6 { 
+    width: 50px;
+    height: 50px;
+    margin-bottom: 375px;
+    background-color: #79D988;
+}
+
+.circle_container:active .circle {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0;
+}
+
+
+
+/*LINKS*/
+a {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.link_container {
+    height: 630px;
+    width: 730px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.link_container a {
+    transform: scale(1.0);
+    transition: all 0.2s ease-in-out;
+}
+
+.link_container a:hover {
+    animation: scaleUpDown 0.4s ease-in-out forwards;
+    color: rgb(186, 1, 1);
+    text-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.games {
+    position: absolute;
+    top: 0;
+}
+
+.news {
+    position: absolute;
+    right: 0;
+}
+
+.sale {
+    position: absolute;
+    left: 0;
+}
+
+.about {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,62 @@
+/*MAIN*/
+
+main {
+    height: auto;
+    background: linear-gradient(to bottom, #000000, #ffffff, #717171);
+    display: flex;
+    justify-content: center;
+}
+
+
+section.wrapper {
+    width: 700px;
+    background: linear-gradient(to bottom, #184d0068, #ffffff, #717171);
+    padding-top: 50px;
+}
+
+.title {
+    padding: 0 20px;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.second_title {
+    padding: 0 20px;
+    font-size: 22px;
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+.content {
+    display: flex;
+}
+
+.text {
+    padding: 0 20px 10px 20px;
+    margin-top: 0;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 0 0
+}
+
+.images img{
+    z-index: 2;
+    height: 100px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: px;
+}
+
+.images img:active {
+    width: auto;
+    transform: scale(3.5);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+
+

@@ -1,0 +1,42 @@
+/*MAIN*/
+
+main {
+    height: 800px;
+    background: linear-gradient(to bottom, #000000, #ffffff, #717171);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    padding-top: 50px;
+    background: linear-gradient(to bottom, #184d0068, #ffffff, #717171);
+    width: 700px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+}
+
+aside img {
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img_text {
+    margin: 0;
+    font-size: 10px;
+}
+
+aside {
+    padding-left: 50px;
+}
+
+.contact_info {
+    padding-top: 30px;
+}

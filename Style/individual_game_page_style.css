@@ -1,0 +1,100 @@
+/*MAIN*/
+
+main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #000000, #ffffff, #717171)
+}
+
+.game_wrapper {
+    width: 700px;
+    height: auto;
+}
+
+.game_wrapper h1 {
+    padding: 35px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.game_upper_section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 50px 0;
+}
+
+.game_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game_info h3 {
+    font-size: 50px;
+}
+
+.game_wrapper img {
+    width: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: #ffffff solid 3px;
+}
+
+.platform_buttons h4 {
+    padding: 0px;
+    margin: 5px;
+}
+
+.platform_buttons button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #cfdcd0;
+    border-radius: 4px;
+}
+
+.platform_buttons button:hover {
+    transition: all 0.1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.platform_buttons button:focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.add_to_cart_button {
+    width: 150px;
+    height: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: white;
+}
+
+span.add {
+    font-size: 30px;
+}
+
+.add_to_cart_button:focus .add{
+    display: none;
+}
+
+span.added {
+    display: none;
+    font-size: 20px;
+}
+
+.add_to_cart_button:focus .added{
+    display: block;
+}
+
+.game_wrapper p {
+    padding: 35px;
+    background-color: rgba(255, 255 ,255, 0.1);
+    border: #153f0c solid 1px;
+}

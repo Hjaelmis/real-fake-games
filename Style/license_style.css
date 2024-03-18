@@ -1,0 +1,26 @@
+/*MAIN*/
+
+main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.license_wrapper {
+    background: linear-gradient(to bottom, #184d0068, #ffffff, #717171);
+    opacity: 0.7;
+    width: 640px;
+    padding: 50px 30px 30px 30px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+.bottom_paragraph {
+    padding-top: 50px;
+}

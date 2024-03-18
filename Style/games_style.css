@@ -1,0 +1,133 @@
+/*MAIN*/
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #ffffff, #717171)
+}
+
+.filter_wrapper {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background-color: #717171;
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropbtn {
+    margin: 10px;
+    width: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    box-sizing: border-box;
+    background-color: white;
+    border: #000000 solid 1px;
+    border-radius: 4px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+
+/*CONTENT*/
+.content {
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #184d0068, #ffffff, #717171);
+}
+
+.content article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 230px;
+    background-color: #bdbdbd;
+    border: solid 1px black;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content article h1 {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+}
+
+.content article img {
+    width: 130px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+
+.content article button {
+    cursor: pointer;
+    width: 150px;
+    height: 0px;
+    opacity: 0;
+}
+
+.content article button span {
+    display: none;
+}
+
+.content article:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+.content article:hover button {
+    transition: all 0.3s;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.content article:hover button span {
+    display: block;
+}
